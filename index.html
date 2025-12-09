@@ -1,0 +1,37 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Absurd Apple Wisdom Generator</title>
+    <link rel="stylesheet" href="style.css" />
+    <script src="https://unpkg.com/typewriter-effect@latest/dist/core.js"></script>
+    <script src="https://cdn.jsdelivr.net/npm/axios@1.6.7/dist/axios.min.js"></script>
+  </head>
+  <body>
+    <div class="container">
+      <header>
+        <h1>Absurd Apple Wisdom Generator</h1>
+      </header>
+
+      <form id="wisdom-form">
+        <input
+          type="text"
+          id="user-instructions"
+          placeholder="Enter a topic for your absurd wisdom"
+          autocomplete="off"
+          required
+          autofocus
+        />
+        <div class="hint">e.g.: Mondays, WiFi, Deadlines, Meetings</div>
+        <input type="submit" value="Generate Wisdom" />
+      </form>
+    </div>
+
+    <div class="wisdom hidden" id="wisdom"></div>
+
+    <footer>Built with an AI API and lots of imaginary apples.</footer>
+
+    <script src="script.js"></script>
+  </body>
+</html>
