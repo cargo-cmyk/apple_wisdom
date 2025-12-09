@@ -2,6 +2,8 @@ function displayWisdom(response) {
   const wisdomElement = document.querySelector("#wisdom");
   wisdomElement.innerHTML = "";
 
+  let text = response.data.answer;
+
   new Typewriter("#wisdom", {
     strings: text,
     autoStart: true,
@@ -17,12 +19,12 @@ function generateWisdom(event) {
   const topic = instructionsInput.value.trim();
   if (!topic) return;
 
-  const apiKey = "DEIN_API_KEY_HIER";
+  const apiKey = "a3fbf9429t7a57989ac706ao0d0b154f";
   const context =
-    "You are a surreal philosopher who creates short, absurd English wisdoms. " +
+    "You are a surreal philosopher who creates very short, absurd English wisdoms. " +
     "Always talk about everyday life in a poetic but weird way, and always include apples in a clever, unexpected metaphor. " +
-    "Write exactly 3 short sentences, all in English. The text must make playful sense but feel a bit unhinged. " +
-    "Do not use any lists, line numbers, code blocks, backticks or markdown. " +
+    "Write exactly one very short sentence, all in English. The text must make playful sense but feel a bit unhinged. " +
+    "Do not use any lists, line numbers, code blocks, backticks or markdown. Sound like a fortune cookie. " +
     "Return plain text only.";
 
   const prompt = `Create an absurd, witty English wisdom about "${topic}". Apples must appear at least once as part of the metaphor.`;
