@@ -6,7 +6,7 @@
 
 body {
   font-family: "Georgia", "Times New Roman", serif;
-  background: linear-gradient(135deg, #0f2027 0%, #203a43 50%, #2c5364 100%);
+  background: linear-gradient(135deg, #1a0e0e 0%, #2d1414 50%, #3d1a1a 100%);
   min-height: 100vh;
   display: flex;
   flex-direction: column;
@@ -23,17 +23,17 @@ body::before {
   inset: 0;
   background: radial-gradient(
       circle at 20% 50%,
-      rgba(16, 185, 129, 0.12) 0%,
+      rgba(220, 38, 38, 0.12) 0%,
       transparent 55%
     ),
     radial-gradient(
       circle at 80% 80%,
-      rgba(52, 211, 153, 0.08) 0%,
+      rgba(239, 68, 68, 0.08) 0%,
       transparent 55%
     ),
     radial-gradient(
       circle at 40% 10%,
-      rgba(110, 231, 183, 0.06) 0%,
+      rgba(34, 197, 94, 0.06) 0%,
       transparent 55%
     );
   pointer-events: none;
@@ -52,12 +52,12 @@ header {
 }
 
 h1 {
-  color: #d1fae5;
+  color: #fecaca;
   font-size: 2.6rem;
   text-align: center;
   font-weight: 300;
   letter-spacing: 1.5px;
-  text-shadow: 0 0 20px rgba(16, 185, 129, 0.35);
+  text-shadow: 0 0 20px rgba(220, 38, 38, 0.4);
   line-height: 1.3;
 }
 
@@ -66,7 +66,7 @@ h1::after {
   display: block;
   width: 80px;
   height: 3px;
-  background: linear-gradient(90deg, transparent, #10b981, transparent);
+  background: linear-gradient(90deg, transparent, #dc2626, transparent);
   margin: 24px auto 0;
 }
 
@@ -75,7 +75,7 @@ form {
   backdrop-filter: blur(12px);
   padding: 38px 38px 34px;
   border-radius: 20px;
-  border: 1px solid rgba(16, 185, 129, 0.2);
+  border: 1px solid rgba(220, 38, 38, 0.25);
   box-shadow: 0 20px 60px rgba(0, 0, 0, 0.35),
     inset 0 1px 0 rgba(255, 255, 255, 0.08);
   width: 100%;
@@ -86,27 +86,27 @@ input[type="text"] {
   padding: 18px 20px;
   font-size: 1rem;
   background: rgba(255, 255, 255, 0.08);
-  border: 2px solid rgba(16, 185, 129, 0.3);
+  border: 2px solid rgba(220, 38, 38, 0.35);
   border-radius: 12px;
   margin-bottom: 10px;
-  color: #d1fae5;
+  color: #fecaca;
   font-family: "Georgia", serif;
   transition: all 0.25s ease;
 }
 
 input[type="text"]::placeholder {
-  color: rgba(209, 250, 229, 0.5);
+  color: rgba(254, 202, 202, 0.5);
 }
 
 input[type="text"]:focus {
   outline: none;
-  border-color: #10b981;
+  border-color: #dc2626;
   background: rgba(255, 255, 255, 0.12);
-  box-shadow: 0 0 18px rgba(16, 185, 129, 0.3);
+  box-shadow: 0 0 18px rgba(220, 38, 38, 0.35);
 }
 
 .hint {
-  color: #a7f3d0;
+  color: #bbf7d0;
   font-size: 0.85rem;
   text-align: left;
   margin: -4px 0 16px 4px;
@@ -120,7 +120,7 @@ input[type="submit"] {
   padding: 16px;
   font-size: 1rem;
   font-weight: 600;
-  background: linear-gradient(135deg, #10b981 0%, #059669 100%);
+  background: linear-gradient(135deg, #dc2626 0%, #b91c1c 100%);
   color: white;
   border: none;
   border-radius: 12px;
@@ -129,13 +129,13 @@ input[type="submit"] {
   text-transform: uppercase;
   font-family: "Segoe UI", sans-serif;
   transition: all 0.25s ease;
-  box-shadow: 0 10px 28px rgba(16, 185, 129, 0.35);
+  box-shadow: 0 10px 28px rgba(220, 38, 38, 0.4);
 }
 
 input[type="submit"]:hover {
   transform: translateY(-2px);
-  box-shadow: 0 15px 36px rgba(16, 185, 129, 0.45);
-  background: linear-gradient(135deg, #059669 0%, #047857 100%);
+  box-shadow: 0 15px 36px rgba(220, 38, 38, 0.5);
+  background: linear-gradient(135deg, #b91c1c 0%, #991b1b 100%);
 }
 
 input[type="submit"]:active {
@@ -147,7 +147,7 @@ input[type="submit"]:active {
   backdrop-filter: blur(12px);
   padding: 40px 40px 34px;
   border-radius: 20px;
-  border: 1px solid rgba(16, 185, 129, 0.2);
+  border: 1px solid rgba(220, 38, 38, 0.25);
   box-shadow: 0 20px 60px rgba(0, 0, 0, 0.35),
     inset 0 1px 0 rgba(255, 255, 255, 0.08);
   width: 100%;
@@ -155,7 +155,7 @@ input[type="submit"]:active {
   margin-bottom: 36px;
   font-size: 1.25rem;
   line-height: 1.9;
-  color: #d1fae5;
+  color: #fecaca;
   text-align: center;
   position: relative;
   z-index: 1;
@@ -171,12 +171,12 @@ input[type="submit"]:active {
   position: absolute;
   inset: 18px;
   border-radius: 18px;
-  border: 1px solid rgba(16, 185, 129, 0.25);
+  border: 1px solid rgba(34, 197, 94, 0.2);
   pointer-events: none;
 }
 
 .generating {
-  color: #6ee7b7;
+  color: #86efac;
   font-size: 1.05rem;
   font-style: normal;
   animation: pulse 1.5s ease-in-out infinite;
@@ -197,10 +197,10 @@ footer {
   backdrop-filter: blur(10px);
   padding: 20px 26px;
   border-radius: 14px;
-  border: 1px solid rgba(16, 185, 129, 0.2);
+  border: 1px solid rgba(220, 38, 38, 0.25);
   text-align: center;
   font-size: 0.9rem;
-  color: #a7f3d0;
+  color: #bbf7d0;
   max-width: 560px;
   line-height: 1.6;
   position: relative;
